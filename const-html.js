@@ -6,8 +6,7 @@ class mainHeader extends HTMLElement {
      </div>
     <nav class='nav'>
             <a href="index.html"   style="--navColor: #A66FB5;"> Home </a>
-       	    <a href="guide.html"   style="--navColor: #E0CD67;"> Guide </a>
-           <!-- <a href="biomes.html" style="--navColor: #E89EB8;"> Biomes </a> -->
+            <a href="biomes.html" style="--navColor: #E89EB8;"> Biomes </a>
        	    <a href="game.html" style="--navColor: #6FC276;"> Play </a>
     </nav>
     `;
@@ -16,13 +15,10 @@ class mainHeader extends HTMLElement {
 class footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-        <footer>
-            <a href="contact.html">
-                <button class="contact">
-                    Contact
-                </button>
-            </a>
-
+       <footer>
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="game.html" class="footer-link">Play</a>
+            <a href="contact.html" class="footer-link">Contact</a>
         </footer>
     `;
   }
