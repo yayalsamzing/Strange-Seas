@@ -13,5 +13,20 @@ class mainHeader extends HTMLElement {
     `;
   }
 }
+class footer extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+        <footer>
+            <a href="contact.html">
+                <button class="contact">
+                    Contact
+                </button>
+            </a>
 
+        </footer>
+    `;
+  }
+}
+
+customElements.define('main-footer', footer);
 customElements.define('main-header', mainHeader);
