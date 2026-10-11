@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="contact.css">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact - Strange Seas</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<script src="main-header.js" defer></script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+</style>
+<body>
+<main-header></main-header>
+
+
+    <div class = 'form'>
+    <h1>Contact Form</h1>
+    <p>* = Required</p>
+
+    <h3>Name (firstname/lastname): *</h3>
+    <textarea id="firstname" class='required' rows="1" cols="16" placeholder="John"></textarea>
+    <textarea id="lastname" class='required' rows="1" cols="16" placeholder="Strangeseas"></textarea>
+    <h3>Contact Email or Phone-Number: *</h3>
+    <textarea id="contact" class='required' rows="1" cols="20" placeholder="..."></textarea>
+
+    <h3>Feedback</h3>
+    <textarea id="feedback-optional" rows="4" cols="50" placeholder="This game is really great because..."></textarea>
+
+    <h3>Questions</h3>
+    <textarea id="question-optional" rows="4" cols="50" placeholder="Why is..."></textarea>
+    <br>
+    <button class = 'submit-button' onclick="checkForm()"> Submit </button>
+    </div>
+
+
+
+
+
+
+
+
+
+<script defer src="clearform.js"></script>
+<script defer src="checkform.js"></script>
+</body>
+
+</html>
