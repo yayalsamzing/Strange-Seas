@@ -1,9 +1,33 @@
-body {
-    background: white;
-    padding: 20%;
+.content {
+    margin: auto;
     padding-top: 1%;
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: center;
+    width: 60%;
+}
+.content h3{
+    padding: none;
+}
+.ocean, .cove, .ancient, .float, .clock {
+  padding-bottom: 5%;
+  padding-top: 1%;
+  background-color: var(--sectionColor, inherit);
+  color: var(--sectionColor, inherit);
+}
+
+h3, p{
+  color: black;
+}
+
+.content img {
+    width: 50%;
+    border: 10px solid oklch(from currentColor calc(l - 0.1) c h);
+    /* convert color into oklch color-space
+    currentColor=inherit from parent.color (above css)
+    l=lightness,
+    subtract by amount (0.1)
+    c h=means just keeping the other channels (chroma and hue the same)
+    */
+}
+p {
+width: 60%;
 }
 

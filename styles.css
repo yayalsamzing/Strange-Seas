@@ -1,33 +1,25 @@
 body {
 	background: black;
 	text-align: center;
-    margin: 0;
-}
-h2 {
-    color: black;
-}
-.title {
-	color: white;
+    margin: auto;
 }
 
-.nav {
-	background: black;
+a {
+transition: transform 0.1s ease;
+transform: scale(0.95);
+cursor: pointer;
+text-decoration: none;
 }
 
-.nav a {
-	text-decoration: none;
-	color: white;
-	font-size: 18px;
-	
-}
-.nav > *:hover { 
-  color: var(--navColor, white); 
+a:hover {transform: scale(1);}
 
-}
 h1 {
   font-family: "Lato", sans-serif;
   font-weight: 800;
   font-style: normal;
+}
+h2 {
+    color: black;
 }
 h2,h3,h4,h5 {
   font-family: "Lato", sans-serif;
@@ -38,34 +30,41 @@ p {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin: auto;
 }
-footer {
+
+
+
+.title {
+	color: white;
+}
+
+
+.nav a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+}
+.nav > *:hover { 
+  color: var(--navColor, white); 
+
+}
+.mainFooter {
+    margin: auto;
     background: var(--footerColor, #000);
     width: var(--footerWidth, 10%);
     justify-content: center;
-    margin: auto;
 }
 .footer-link {
   display: inline-block;
-  border: none;
-  outline: none;
-  text-decoration: none;
-  padding: 15px 30px;
-  margin: 10px;
+  padding: 3% 2%;
+  margin-left: 3%;
+  margin-right: 3%;
   background-color: black;
-  cursor: pointer;
   border-radius: 5px;
-  transform: scale(0.95);
-  transition: transform 0.1s ease;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
+  width: 10%;
 }
 
-.footer-link:hover {
-  transform: scale(1);
-}
-
-
-
-}
