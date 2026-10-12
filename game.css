@@ -5,6 +5,9 @@
     height: 40%;
     margin: auto;
     }
+iframe {
+    border: none;
+}
 .content {
     background: lightpink;
     margin: auto;
@@ -13,7 +16,6 @@
     text-align: center;
 }
 #fullscreen-cont:not(:fullscreen)iframe {
-    border: none;
     width: 26vw;
     height: 28vh;
 
