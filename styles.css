@@ -4,14 +4,17 @@ body {
     margin: auto;
 }
 
-a {
-transition: transform 0.1s ease;
-transform: scale(0.95);
-cursor: pointer;
-text-decoration: none;
+a, button {
+  transition: transform 0.1s ease;
+  transform: scale(0.95);
+  cursor: pointer;
+  text-decoration: none;
 }
 
-a:hover {transform: scale(1);}
+a:hover, button:hover {
+  transform: scale(1);
+}
+
 
 h1 {
   font-family: "Lato", sans-serif;
@@ -58,8 +61,7 @@ p {
 .footer-link {
   display: inline-block;
   padding: 3% 2%;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin: 1%;
   background-color: black;
   border-radius: 5px;
   color: white;
