@@ -13,7 +13,7 @@ function checkForm() {
             alert('p'); 
             console.log('phone_number_accepted'); 
         } else { 
-            alert('Invalid Email or Phone Number (Must be a valid email or a 10-digit phone number)'); 
+            // alert('Invalid Email or Phone Number (Must be a valid email or a 10-digit phone number)'); 
             return false; 
         } 
 }
