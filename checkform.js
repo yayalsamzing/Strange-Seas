@@ -5,7 +5,7 @@ function checkForm() {
 if (contactValue !== '') { 
     const isEmail = contactValue.includes('@') && contactValue.includes('.');
     const isPhone = contactValue.length === 10 && !isNaN(contactValue);
-
+    alert(contactValue);
     if (isEmail) { 
         alert('e'); 
         console.log('email_accepted'); 
