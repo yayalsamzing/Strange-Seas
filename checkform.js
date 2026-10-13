@@ -6,7 +6,7 @@ function checkForm() {
     if (contactValue.length !== 10 && !contactValue.includes('@')) {
         alert('Invalid Email or Phone Number (Must be a 10 digit phone number)');
         return false;
-    } else if (contactValue.includes('@')) {
+    } else if (contactValue.includes('@') && contactValue.includes('.')) {
         console.log('email_accepted');
     } else if (contactValue.length === 10) {
         console.log('phone_number_accepted');
