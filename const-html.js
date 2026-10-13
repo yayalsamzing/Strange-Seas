@@ -6,6 +6,7 @@ class mainHeader extends HTMLElement {
             <a href="index.html"   style="--navColor: #A66FB5;"> Home </a>
             <a href="biomes.html" style="--navColor: #E89EB8;"> Biomes </a>
        	    <a href="game.html" style="--navColor: #6FC276;"> Play </a>
+            <a href="contact.html" style="--navColor: #487fb3;"> Contact </a>
     </nav>
     `;
   }
@@ -15,6 +16,7 @@ class footer extends HTMLElement {
     this.innerHTML = `
        <footer class ='mainFooter'>
             <a href="index.html" class="footer-link">Home</a>
+            <a href="biomes.html" class="footer-link">Biomes</a>
             <a href="game.html" class="footer-link">Play</a>
             <a href="contact.html" class="footer-link">Contact</a>
         </footer>
