@@ -2,9 +2,11 @@ function checkForm() {
     const textAreas = document.querySelectorAll('.required');
     const contactInput = document.querySelector('#contact');
     const contactValue = contactInput.value.trim();
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const numcheck = /^\d{10}$/;
     if (contactValue !== '') { 
-        const isEmail = contactValue.includes('@') && contactValue.includes('.');
-        const isPhone = contactValue.length === 10 && !isNaN(contactValue);
+        const isEmail = regex.test(contactValue);
+        const isPhone = numcheck.test(contactValue);
         alert(document.querySelector);
         if (isEmail) { 
             alert('e'); 
@@ -13,7 +15,7 @@ function checkForm() {
             alert('p'); 
             console.log('phone_number_accepted'); 
         } else { 
-            // alert('Invalid Email or Phone Number (Must be a valid email or a 10-digit phone number)'); 
+            alert('Invalid Email or Phone Number (Must be a valid email or a 10-digit phone number)'); 
             return false; 
         } 
 }
