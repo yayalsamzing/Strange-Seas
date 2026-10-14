@@ -25,5 +25,5 @@ function checkForm() {
     }
     clearForm()
     alert('Form Submitted')
-    window.location.replace("game.html")
+    window.location.replace("index.html")
     }
