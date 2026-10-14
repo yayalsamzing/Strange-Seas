@@ -4,13 +4,13 @@ function checkForm() {
     const contactValue = contactInput.value.trim();
     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const numcheck = /^\d{10}$/;
-    const isEmail = regex.test(contactValue);
-    const isPhone = numcheck.test(contactValue);
-    if (isEmail) { 
-        alert(isEmail); 
+    const checkPassEmail = regex.test(contactValue);
+    const checkPassPhone = numcheck.test(contactValue);
+    if (checkPassEmail) { 
+        alert(checkPassEmail); 
         console.log('email_accepted'); 
-    } else if (isPhone) { 
-        alert(isPhone); 
+    } else if (checkPassPhone) { 
+        alert(checkPassPhone); 
         console.log('phone_number_accepted'); 
     } else { 
         alert('Invalid Email or Phone Number (Must be a valid email or a 10-digit phone number)'); 
