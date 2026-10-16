@@ -21,7 +21,9 @@
     width: 100%;
 }
 
-.flex-img-box img {
+.flex-img-box img {     
+    border: 2px solid black;
+    background: var(--fillColor, none);
     position: absolute;
     width: var(--sizeChange, 50%);
     height: auto;
@@ -34,4 +36,3 @@
 .logo {
     width: 10%;
 }
-
