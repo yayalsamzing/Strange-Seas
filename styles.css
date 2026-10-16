@@ -103,6 +103,6 @@ p {
         transform: rotate(360deg);
     }
 }
-.imgcontrol {
+.img-control {
     width: var(--size, 50%);
 }

@@ -1,3 +1,6 @@
+body {
+
+}
 .form {
 	display: block;
 	margin: auto;
@@ -8,9 +11,8 @@
 textarea {
   border: 1px solid black;
   padding: 1% 1%;
-  background-color: #D5FFFF;
+
   border-radius: 2px;
-  margin: none;
   resize: none;
 }
 .submit-button {
