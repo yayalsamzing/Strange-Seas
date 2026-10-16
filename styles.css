@@ -44,6 +44,7 @@ p {
 
 
 .nav a {
+	font-family: none;
 	text-decoration: none;
 	color: white;
 	font-size: 18px;
