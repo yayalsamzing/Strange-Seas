@@ -70,10 +70,39 @@ p {
   font-weight: 600;
   width: 10%;
 }
+.flex-img-box {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transform: translate(var(--flexOffsetX, 0%), var(--flexOffsetY, 0%));
+}
 
-.res {
-	width: var(--size, 50%);
+.flex-img-box img {
+    border: 2px solid black;
+    background: var(--fillColor, none);
+    position: absolute;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(var(--flexOffsetX, 0%), var(--flexOffsetY, 0%));
 }
 .no-border {
 	border: none  !important;
+}
+.pxart {
+        image-rendering: pixelated;
+}
+.rotate {
+    animation: spin var(--revTime, 2s) linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.imgcontrol {
+    width: var(--size, 50%);
 }
